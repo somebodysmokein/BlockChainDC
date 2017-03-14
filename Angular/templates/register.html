@@ -1,0 +1,43 @@
+<section class="card">
+<form name="regform" ng-submit="register()" novalidate>
+    <!-- <div class="textintro">
+      <h1>{{message}}</h1>
+    </div> -->
+<div class="row">
+  <div class="medium-6 medium-centered large-4 large-centered columns">
+
+      <div class="row column">
+        <h4 class="text-center">{{message}}</h4>
+      <fieldset>
+        <label>Email
+          <input type="email" name="email" placeholder="batman@wayne.com" ng-model="user.email" ng-required="true">
+          <p class="error" ng-show="regform.email.$invalid && regform.email.$touched">Must be a valid email</p>
+        </label>
+        <label>FirstNamename 
+          <input type="text" name="firstname" placeholder="Bruce" ng-model="user.firstname" ng-required="true">
+          <p class="error" ng-show="regform.firstname.$invalid && regform.firstname.$touched">First name ng-required="true"</p>
+        </label>
+        <label>Lastname
+          <input type="text" name="lastname" placeholder="Wayne" ng-model="user.lastname" ng-required="true">
+          <p class="error" ng-show="regform.lastname.$invalid && regform.lastname.$touched">Last name ng-required="true"</p>
+        </label>
+        <label>Phoname
+          <input type="tel" name="tel" pattern='[\(]\d{3}[\)][\-]\d{3}[\-]\d{4}' placeholder="(xxx)-xxx-xxxx" ng-model="user.tel" ng-required="true">
+          <p class="error" ng-show="regform.tel.$invalid && regform.tel.$touched">Enter Valid PhoneNumber</p>
+        </label>
+        <label>Password
+          <input type="password" name="password" placeholder="Password" ng-model="user.password" ng-required="true">
+          <p class="error" ng-show="regform.password.$invalid && regform.password.$touched">Password is ng-required="true"</p>
+
+        </label>
+      </fieldset>
+        <input id="show-password" type="checkbox"><label for="show-password">Show password</label>
+        <p><!-- a type="submit" class="button expanded">Register</a> --><!-- <button type="button" class="success button">Register</button> -->
+          <input type="submit" id="submit" class="button expanded" value="Register" /></p>
+      </div>
+  </div>
+</form>
+</section>
+<script>
+
+</script>
